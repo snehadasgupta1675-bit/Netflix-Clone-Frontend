@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <img src="images/netflix-logo.png" class="logo">
+
+    <div class="nav-right">
+        <input type="text" id="searchBox" placeholder="Search movies...">
+        <button onclick="window.location.href='login.html'">Login</button>
+    </div>
+</nav>
+
+<!-- BANNER -->
+<header class="banner">
+    <div class="banner-content">
+        <h1>Unlimited Movies & Endless Entertainment</h1>
+        <p>Stream anywhere. Anytime you want.</p>
+
+        <button onclick="addToList()">+ My List</button>
+    </div>
+</header>
+
+<!-- MOVIES SECTION -->
+<section class="movies">
+    <h2>Trending Now</h2>
+    <div class="row" id="row1"></div>
+
+    <h2>Top Picks</h2>
+    <div class="row" id="row2"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
